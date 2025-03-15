@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me | Alvin Joby</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/meyawo.css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background: #f8f9fa;
-            color: #333;
+            font-family: var(--font-family-sans-serif);
+            background: var(--light);
+            color: var(--dark);
             text-align: center;
             padding: 40px;
         }
@@ -21,43 +22,43 @@
             gap: 20px;
         }
         h1 {
-            font-size: 28px;
-            color: #007bff;
+            font-size: 32px;
+            color: var(--primary);
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 600;
+            letter-spacing: 2px;
+            font-weight: 700;
         }
         .contact-item {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            padding: 12px 20px;
+            padding: 14px 25px;
             font-size: 18px;
-            background: #ffffff;
-            border-radius: 30px;
+            background: var(--white);
+            border-radius: 50px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .contact-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            padding: 12px 25px;
-            border-radius: 30px;
+            padding: 14px 30px;
+            border-radius: 50px;
             font-size: 18px;
             font-weight: bold;
             text-decoration: none;
-            color: white;
+            color: var(--white);
             transition: all 0.3s ease;
         }
         .btn-whatsapp {
-            background: #25D366;
+            background: var(--success);
         }
         .btn-whatsapp:hover {
             background: #1ebe5d;
@@ -65,35 +66,43 @@
         }
         .social-links {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
             margin-top: 20px;
         }
         .social-links a {
-            font-size: 24px;
-            color: #007bff;
+            font-size: 28px;
+            color: var(--primary);
             transition: transform 0.3s ease, color 0.3s ease;
         }
         .social-links a:hover {
             transform: scale(1.2);
-            color: #0056b3;
+            color: var(--indigo);
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: var(--primary);
+            color: var(--white);
+            font-size: 16px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Contact Me</h1>
+        <h1>Let's Connect</h1>
         
         <div class="contact-item">
-            <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+            <i class="fab fa-whatsapp" style="color: var(--success);"></i>
             <a href="https://wa.me/918289840884?text=Hi" target="_blank" class="btn btn-whatsapp">
                 Chat on WhatsApp
             </a>
         </div>
 
         <div class="contact-item">
-            <i class="fas fa-phone" style="color: #007bff;"></i>
-            <a href="tel:+918289840884" style="color: #333; font-weight: bold; font-size: 20px; text-decoration: none;">+91 82898 40884</a>
+            <i class="fas fa-phone" style="color: var(--primary);"></i>
+            <a href="tel:+918289840884" style="color: var(--dark); font-weight: bold; font-size: 20px; text-decoration: none;">+91 82898 40884</a>
         </div>
         
         <div class="social-links">
@@ -111,5 +120,8 @@
             </a>
         </div>
     </div>
+    <footer class="footer">
+        <p>© 2025 Alvin Joby | Designed with Passion</p>
+    </footer>
 </body>
 </html>
