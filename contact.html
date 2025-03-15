@@ -8,62 +8,62 @@
     <title>Contact Me | Portfolio</title>
     
     <!-- Font Icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Bootstrap + Theme CSS -->
+    <!-- Bootstrap + Custom CSS -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
     <style>
         body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to right, #1f4037, #99f2c8);
             color: white;
             font-family: 'Poppins', sans-serif;
+            text-align: center;
         }
-        .section {
-            padding: 40px 0;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
         }
         .header h1 {
-            font-size: 24px;
-            font-weight: 600;
+            font-size: 28px;
+            font-weight: 700;
             color: #ffcc00;
+            margin-bottom: 20px;
         }
-        .btn {
+        .contact-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            font-size: 18px;
             padding: 12px 20px;
-            font-size: 16px;
-            border-radius: 30px;
+            border-radius: 50px;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        .btn i {
-            margin-right: 8px;
-        }
-        .btn-success {
-            background-color: #25D366;
             border: none;
-            color: white;
         }
-        .btn-success:hover {
+        .btn-whatsapp i {
+            margin-right: 10px;
+        }
+        .btn-whatsapp:hover {
             background-color: #1ebe5d;
-            transform: scale(1.05);
-        }
-        .contact-box {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-        .contact-box:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
         }
         .social-links a {
             display: inline-block;
             margin: 10px;
-            font-size: 24px;
-            transition: transform 0.3s ease, color 0.3s ease;
+            font-size: 26px;
             color: white;
+            transition: transform 0.3s ease, color 0.3s ease;
         }
         .social-links a:hover {
             transform: scale(1.2);
@@ -71,59 +71,51 @@
         }
         .footer {
             padding: 20px;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <!-- Page Header -->
-    <header class="header text-center">
-        <h1>Contact Me</h1>
+    <header class="header">
+        <h1>Get in Touch</h1>
     </header>
 
     <!-- Contact Section -->
-    <section class="section text-center">
-        <div class="container">
-            <h2 class="section-title">Let's Connect! 🚀</h2>
-            <p class="lead">Feel free to reach out through any of my contact options below!</p>
-            
-            <div class="contact-box mt-4">
-                <h3>WhatsApp Me!</h3>
-                <a href="https://wa.me/918289840884?text=Hi" target="_blank" class="btn btn-success">
-                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                </a>
-            </div>
-            
-            <div class="contact-box mt-3">
-                <h3>Call Me 📞</h3>
-                <p>Phone: <a href="tel:+918289840884">+91 82898 40884</a></p>
-            </div>
-            
-            <div class="social-links text-center mt-4">
-                <h3>Follow Me 🌍</h3>
-                <a href="https://www.facebook.com/Alvinniravathukandathil" class="link" target="_blank">
-                    <i class="ti-facebook"></i>
-                </a>
-                <a href="https://twitter.com/AlvinIndia" class="link" target="_blank">
-                    <i class="ti-twitter-alt"></i>
-                </a>
-                <a href="mailto:alvinjobyindia@gmail.com" class="link">
-                    <i class="ti-email"></i>
-                </a>
-                <a href="https://github.com/alvinjoby" class="link" target="_blank">
-                    <i class="ti-github"></i>
-                </a>
-            </div>
+    <div class="container">
+        <div class="contact-card">
+            <h3>WhatsApp Me!</h3>
+            <a href="https://wa.me/918289840884?text=Hi" target="_blank" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
         </div>
-    </section>
+        
+        <div class="contact-card">
+            <h3>Call Me 📞</h3>
+            <p>Phone: <a href="tel:+918289840884" style="color: #ffcc00; font-weight: bold;">+91 82898 40884</a></p>
+        </div>
+        
+        <div class="social-links">
+            <h3>Connect with Me 🌍</h3>
+            <a href="https://www.facebook.com/Alvinniravathukandathil" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/AlvinIndia" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:alvinjobyindia@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/alvinjoby" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer text-center mt-5">
-        <p>© <script>document.write(new Date().getFullYear())</script> Alvin Joby | Let's build something awesome!</p>
+    <footer class="footer">
+        <p>© <script>document.write(new Date().getFullYear())</script> Alvin Joby | Designed with Passion 💡</p>
     </footer>
-
-    <!-- Core Scripts -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 </body>
 </html>
