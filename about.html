@@ -11,6 +11,52 @@
    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
    <!-- Bootstrap + Theme CSS -->
    <link rel="stylesheet" href="assets/css/meyawo.css">
+   <style>
+      body {
+         animation: fadeIn 1.2s ease-in-out;
+      }
+      
+      @keyframes fadeIn {
+         from { opacity: 0; transform: translateY(-10px); }
+         to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .section-title {
+         font-size: 2.5rem;
+         font-weight: bold;
+         background: linear-gradient(to right, #ff6d02, #695aa6);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         animation: slideIn 1s ease-in-out;
+      }
+      
+      @keyframes slideIn {
+         from { opacity: 0; transform: translateX(-20px); }
+         to { opacity: 1; transform: translateX(0); }
+      }
+      
+      .box {
+         padding: 20px;
+         border-radius: 10px;
+         background: rgba(255, 255, 255, 0.1);
+         backdrop-filter: blur(10px);
+         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s ease-in-out;
+      }
+      .box:hover {
+         transform: scale(1.05);
+      }
+      
+      .btn-primary {
+         background: linear-gradient(45deg, #695aa6, #ff6d02);
+         border: none;
+         transition: all 0.3s ease-in-out;
+      }
+      .btn-primary:hover {
+         transform: scale(1.1);
+         background: linear-gradient(45deg, #ff6d02, #695aa6);
+      }
+   </style>
 </head>
 
 <body>
@@ -27,21 +73,21 @@
             A code-loving, coffee-powered, semi-chaotic human figuring out the world of development one bug at a time! 🚀
          </p>
          <div class="row mt-4">
-            <div class="col-md-6">
+            <div class="col-md-6 box">
                <h3 class="text-primary">🌟 What I Do</h3>
                <p>Turning caffeine into code, pixels into perfection, and ideas into reality. Web development, UI/UX design, and software engineering are my playgrounds.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 box">
                <h3 class="text-danger">🎯 My Grand Scheme</h3>
                <p>To build stuff so fun and mind-blowing that people forget they have deadlines. Also, maybe rule the world with epic code—still working on that part. 😆</p>
             </div>
          </div>
          <div class="row mt-4">
-            <div class="col-md-6">
+            <div class="col-md-6 box">
                <h3 class="text-success">🚀 Tech & Tools</h3>
                <p>HTML, CSS, JavaScript, React, and the art of debugging (aka staring at errors until they make sense).</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 box">
                <h3 class="text-warning">🎨 Beyond Code</h3>
                <p>Sketching, binge-watching sci-fi, deep conversations about the best pizza toppings. 🍕</p>
             </div>
@@ -56,7 +102,7 @@
 
    <!-- Footer -->
    <footer class="footer text-center mt-5">
-      <p>&copy; <script>document.write(new Date().getFullYear())</script> Alvin Joby | Making the web a cooler place!</p>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Alvin Joby</p>
    </footer>
 
    <!-- Core Scripts -->
