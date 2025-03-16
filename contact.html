@@ -35,32 +35,31 @@
         }
 
         .back-button {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 14px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    color: white;
-    font-size: 0.9em;
-    font-weight: 500;
-    border-radius: 20px;
-    text-decoration: none;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            font-size: 0.9em;
+            font-weight: 500;
+            border-radius: 20px;
+            text-decoration: none;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-.back-button i {
-    font-size: 1em;
-}
+        .back-button i {
+            font-size: 1em;
+        }
 
-.back-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
-}
-
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+        }
 
         .container {
             width: 90%;
@@ -112,13 +111,13 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            padding: 12px 24px;
+            padding: 10px 22px;
             background: linear-gradient(135deg, #128C7E, var(--whatsapp-color));
             color: var(--white);
-            border-radius: 25px;
+            border-radius: 20px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1em;
+            font-size: 0.95em;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -145,8 +144,8 @@
 
         .social-links i,
         .social-links svg {
-            width: 28px;
-            height: 28px;
+            width: 26px;
+            height: 26px;
             transition: transform 0.3s ease;
         }
 
@@ -178,52 +177,6 @@
             text-align: center;
             padding: 5px;
         }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-
-            .container {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .contact-item {
-                padding: 12px;
-                gap: 12px;
-            }
-
-            .contact-item i {
-                font-size: 1.8em;
-            }
-
-            .contact-item a {
-                font-size: 0.95em;
-            }
-
-            .btn-whatsapp {
-                font-size: 0.9em;
-                padding: 10px 20px;
-            }
-
-            .social-links {
-                gap: 15px;
-            }
-
-            .social-links i,
-            .social-links svg {
-                width: 24px;
-                height: 24px;
-            }
-
-            .footer {
-                font-size: 0.8em;
-            }
-        }
     </style>
 </head>
 
@@ -250,6 +203,14 @@
         <div class="contact-item">
             <i class="fas fa-envelope"></i>
             <a href="mailto:alvinjobyindia@gmail.com">alvinjobyindia@gmail.com</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/Alvinniravathukandathil" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/AlvinIndia" target="_blank">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 5.924c-.79.35-1.64.585-2.54.693a4.48 4.48 0 0 0 1.97-2.48 9.03 9.03 0 0 1-2.86 1.095 4.49 4.49 0 0 0-7.66 4.093A12.77 12.77 0 0 1 3.17 4.1a4.49 4.49 0 0 0 1.39 5.99 4.45 4.45 0 0 1-2.03-.56v.06a4.49 4.49 0 0 0 3.6 4.4 4.48 4.48 0 0 1-2.03.08 4.49 4.49 0 0 0 4.2 3.12A9.04 9.04 0 0 1 2 19.17 12.78 12.78 0 0 0 9.39 21c7.68 0 11.88-6.37 11.88-11.88 0-.18-.01-.35-.02-.53a8.5 8.5 0 0 0 2.1-2.16z"/></svg>
+            </a>
+            <a href="https://github.com/alvinjoby" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </div>
 
