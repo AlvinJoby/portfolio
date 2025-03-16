@@ -1,126 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me | Alvin Joby</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: var(--font-family-sans-serif);
-            background: var(--light);
-            color: var(--dark);
-            text-align: center;
-            padding: 40px;
+        :root {
+            --bg-gradient-start: #f0f0f0;
+            --bg-gradient-end: #e8e8e8;
+            --primary-color: #007bff; /* Blue */
+            --secondary-color: #6c757d; /* Gray */
+            --accent-color: #28a745; /* Green */
+            --text-color: #333;
+            --white: #fff;
+            --whatsapp-color: #25D366;
+            --button-gradient-start: #0069d9;
+            --button-gradient-end: #007bff;
         }
-        .container {
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            color: var(--text-color);
+            text-align: center;
+            padding: 50px;
+            margin: 0;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            gap: 50px;
+            align-items: center;
+            min-height: 100vh;
         }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            padding: 40px;
+        }
+
         h1 {
-            font-size: 32px;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            font-size: 2.8em;
             font-weight: 700;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
         }
+
         .contact-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 14px 25px;
-            font-size: 18px;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 20px;
             background: var(--white);
-            border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .contact-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
-        .btn {
-            display: flex;
+
+        .contact-item i {
+            font-size: 2.5em;
+            min-width: 50px;
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            padding: 14px 30px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #128C7E, var(--whatsapp-color));
             color: var(--white);
-            transition: all 0.3s ease;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .btn-whatsapp {
-            background: var(--success);
-        }
+
         .btn-whatsapp:hover {
-            background: #1ebe5d;
-            transform: scale(1.1);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
         }
+
         .social-links {
             display: flex;
-            gap: 20px;
             justify-content: center;
-            margin-top: 20px;
+            gap: 30px;
+            margin-top: 40px;
         }
+
         .social-links a {
-            font-size: 28px;
-            color: var(--primary);
+            font-size: 2em;
             transition: transform 0.3s ease, color 0.3s ease;
         }
-        .social-links a:hover {
-            transform: scale(1.2);
-            color: var(--indigo);
+
+        .social-links a:nth-child(1) {
+            color: #1877f2; /* Facebook Blue */
         }
+
+        .social-links a:nth-child(2) {
+            color: #000; /* X (Twitter) Black */
+        }
+
+        .social-links a:nth-child(3) {
+            color: #333; /* GitHub Black */
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
         .footer {
-            margin-top: 40px;
-            padding: 20px;
-            background: var(--primary);
-            color: var(--white);
-            font-size: 16px;
-            border-radius: 10px;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: var(--text-color);
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-item:nth-child(2) i {
+            color: var(--primary-color);
+        }
+
+        .contact-item:nth-child(3) i {
+            color: var(--secondary-color);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Contact Me</h1>
-        
+
         <div class="contact-item">
-            <i class="fab fa-whatsapp" style="color: var(--success);"></i>
-            <a href="https://wa.me/918289840884?text=Hi" target="_blank" class="btn btn-whatsapp">
-                Chat on WhatsApp
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/918289840884?text=Hi" target="_blank" class="btn-whatsapp">
+                WhatsApp
             </a>
         </div>
 
         <div class="contact-item">
-            <i class="fas fa-phone" style="color: var(--primary);"></i>
-            <a href="tel:+918289840884" style="color: var(--dark); font-weight: bold; font-size: 20px; text-decoration: none;">+91 82898 40884</a>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+918289840884">+91 82898 40884</a>
         </div>
-        
-        <div class="social-links">
-            <a href="https://www.facebook.com/Alvinniravathukandathil" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://twitter.com/AlvinIndia" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="mailto:alvinjobyindia@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://github.com/alvinjoby" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
+
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:alvinjobyindia@gmail.com">alvinjobyindia@gmail.com</a>
         </div>
-    </div>
+
+<div class="social-links">
+    <a href="https://www.facebook.com/Alvinniravathukandathil" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://twitter.com/AlvinIndia" target="_blank">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.395 2H21.814L14.935 10.22L23 22H16.368L11.331 14.948L5.477 22H1.052L8.469 13.14L0.5 2H7.257L11.835 8.476L17.395 2ZM16.268 20H18.362L6.582 3.941H4.33L16.268 20Z"/>
+        </svg>
+    </a>
+    <a href="https://github.com/alvinjoby" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+      </div>
+      
     <footer class="footer">
         <p>© 2025 Alvin Joby</p>
-    </footer>
+    </footer> 
 </body>
+
 </html>
